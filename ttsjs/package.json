@@ -1,0 +1,17 @@
+{
+  "name": "ttsjs",
+  "description": "simple server+tts demo app",
+  "version": "0.0.1",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagohersan/ttsjs.git"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "rpi-gpio": "^0.7.0"
+  },
+  "scripts": {
+    "start": "node serve.js"
+  }
+}

@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DSO</title>
+    <style>
+    #container {
+        font-family: "Helvetica Neue";
+        width: 50%;
+    }
+    marquee {
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+    #button {
+        cursor: pointer;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 20px;
+        color: #FFFFFF;
+        transition: background-color 200ms ease-out;
+    }
+    #button {
+        background-color: #6E1010;
+        border-radius: 5px;
+    }
+    #button:hover, #button:focus {
+        background-color: #6E8080;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="marquee">
+            <marquee width=100% height=32 bgcolor="#A0522D">DISPOSITIVO SINTETIZADOR DE OPINIÕES</marquee>
+        </div>
+        <form action="/say">
+            Texto:<br>
+            <input type="text" name="text" value="" size="80"><br>
+            <input type="submit" id="button" value="FALAR">
+        </form>
+    </div>
+</body>
+</html>
