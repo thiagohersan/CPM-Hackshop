@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 pythonpid=`ps | grep -v awk | awk '/python/{print $1}'`
 kill -9 $pythonpid
@@ -15,10 +15,9 @@ do
   sudo kill -9 $killpid
   mkdir tmpFlowDir && cd tmpFlowDir
   tcpflow -r ../out.cap
-  sleep 1
+
   mkdir data
   foremost -i * -o data
-  sleep 1
 
   cd data
   for t in {gif,png,jpg} 
@@ -28,7 +27,6 @@ do
       cp $t/* ../../imgs/
     fi
   done
-  sleep 1
 
   cd ../../
   rm index.html
